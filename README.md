@@ -14,6 +14,7 @@ Este repositório também reflete meu conhecimento em integração e entrega con
 Adicionalmente, destaco minha experiência com cloud computing, incluindo o uso de plataformas como AWS, Google Cloud e ferramentas de infraestrutura como código, como Terraform, para provisionamento e gerenciamento de recursos na nuvem.
 
 Através deste projeto, busco demonstrar minha capacidade de:
+
 	•	Estruturar aplicações escaláveis e bem organizadas.
 	•	Aplicar ferramentas modernas e integrá-las de maneira eficiente.
 	•	Utilizar e gerenciar containers para ambientes consistentes e reproduzíveis.
