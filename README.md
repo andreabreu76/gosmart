@@ -3,6 +3,26 @@
 
 GoSmart é uma aplicação escrita em Go que utiliza o framework Fiber para construir APIs RESTful. O projeto é integrado com a OpenAI para geração de texto e usa Redis para armazenamento de logs. O projeto é modularizado e segue boas práticas de desenvolvimento.
 
+# Objetivo
+
+Este projeto foi desenvolvido como parte do meu portfólio público para demonstrar habilidades em desenvolvimento backend utilizando a linguagem Go e o framework Fiber. O objetivo é apresentar boas práticas na organização de diretórios, modularização de código e integração com ferramentas modernas como OpenAI, Redis e Protobuf.
+
+Além disso, o projeto inclui exemplos práticos de como configurar e utilizar o Docker para facilitar a replicação do ambiente de desenvolvimento e produção, garantindo consistência e eficiência no deploy.
+
+Este repositório também reflete meu conhecimento em integração e entrega contínuas (CI/CD), utilizando GitHub Actions para pipelines automatizados de build, testes e deploy. Demonstro aqui como estruturar pipelines eficientes que integram diferentes etapas do ciclo de vida de desenvolvimento de software.
+
+Adicionalmente, destaco minha experiência com cloud computing, incluindo o uso de plataformas como AWS, Google Cloud e ferramentas de infraestrutura como código, como Terraform, para provisionamento e gerenciamento de recursos na nuvem.
+
+Através deste projeto, busco demonstrar minha capacidade de:
+	•	Estruturar aplicações escaláveis e bem organizadas.
+	•	Aplicar ferramentas modernas e integrá-las de maneira eficiente.
+	•	Utilizar e gerenciar containers para ambientes consistentes e reproduzíveis.
+	•	Criar pipelines de automação para CI/CD utilizando GitHub Actions.
+	•	Provisionar e gerenciar recursos em nuvem com Terraform e serviços de cloud.
+	•	Documentar projetos de forma clara e acessível, destacando cada componente essencial.
+
+Este projeto não é apenas uma aplicação funcional, mas também um exemplo de como criar APIs RESTful robustas e confiáveis, com foco em qualidade de código, automação e adoção de tecnologias amplamente utilizadas no mercado.
+
 ---
 
 ## Estrutura do Projeto
