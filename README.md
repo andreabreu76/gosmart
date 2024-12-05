@@ -3,6 +3,8 @@
 
 GoSmart é uma aplicação escrita em Go que utiliza o framework Fiber para construir APIs RESTful. O projeto é integrado com a OpenAI para geração de texto e usa Redis para armazenamento de logs. O projeto é modularizado e segue boas práticas de desenvolvimento.
 
+Nota Especial para o [ProcessPDFHandler](ESP_NOTE.MD)
+
 # Objetivo
 
 Este projeto foi desenvolvido como parte do meu portfólio público para demonstrar habilidades em desenvolvimento backend utilizando a linguagem Go e o framework Fiber. O objetivo é apresentar boas práticas na organização de diretórios, modularização de código e integração com ferramentas modernas como OpenAI, Redis e Protobuf.
