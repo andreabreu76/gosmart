@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package entities;
+
+option go_package = "gosmart/entities";
+
+message ExampleRequest {
+  string input = 1;
+}
+
+message ExampleResponse {
+  string output = 1;
+}

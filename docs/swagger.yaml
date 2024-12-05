@@ -1,0 +1,91 @@
+basePath: /
+definitions:
+  entities.OpenAIRequest:
+    properties:
+      prompt:
+        type: string
+    type: object
+host: localhost:3000
+info:
+  contact:
+    email: suporte@gosmart.com
+    name: Suporte
+    url: http://github.com/yooga/gosmart
+  description: API para o sistema GoSmart com integração OpenAI e suporte a logs
+  termsOfService: http://swagger.io/terms/
+  title: GoSmart API
+  version: "1.0"
+paths:
+  /openai:
+    post:
+      consumes:
+      - application/json
+      description: Recebe um prompt e retorna uma resposta gerada pelo modelo OpenAI
+      parameters:
+      - description: Prompt para a OpenAI
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/entities.OpenAIRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Resposta gerada
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "400":
+          description: Erro de validação
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Erro interno
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Gera uma resposta da OpenAI
+      tags:
+      - OpenAI
+  /process-pdf:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Recebe um arquivo PDF e processa cada página, retornando os resultados
+      parameters:
+      - description: PDF file to be processed
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              additionalProperties: true
+              type: object
+            type: array
+        "400":
+          description: Failed to receive the file
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal server error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Processa um arquivo PDF
+      tags:
+      - PDF
+swagger: "2.0"

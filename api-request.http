@@ -1,0 +1,19 @@
+@host = http://localhost:3000
+
+### Testar o endpoint OpenAI
+POST {{host}}/openai
+Content-Type: application/json
+
+{
+  "prompt": "Escreva uma piada sobre programadores."
+}
+
+### Testar se o servidor está rodando (rota padrão ou de exemplo)
+GET {{host}}/example
+
+
+### Testar o endpoint de processamento de PDF
+POST http://localhost:3000/process-pdf
+Content-Type: multipart/form-data
+
+file=@/Users/andreabreu/Desktop/f0f63e9d-c240-4625-902b-0aa9c224b9aa-anexo-Lista-de-produtos-atualizada-em-18.11.2024.pdf
